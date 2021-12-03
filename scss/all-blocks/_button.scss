@@ -1,4 +1,5 @@
 .button {
+    display: inline-block;
   padding: 11px 37px;
   font-weight: bold;
   font-size: 15px;
@@ -7,15 +8,22 @@
   color: #fff;
   background: var(--orange);
   border: 3px solid var(--orange);
-  display: flex;
+//   display: flex;
   flex-shrink: 0;
   &:active {
     background-color: transparent;
     color: var(--orange);
   }
-  &--link {
+  &--link, &--hero {
     text-decoration: none;
   }
+
+}
+@media only screen and (max-width: 768px){
+    .button--link{
+        padding-left: 29px;
+        padding-right: 29px;
+    }
 }
 @media only screen and (max-width: 590px) {
   .button--link {
@@ -27,7 +35,10 @@
   }
 }
 @media only screen and (max-width: 415px) {
-  .header__open .button--link {
+    .button--link{
+        padding: 5px 16px;
+    }
+    .header__open .button--link {
     width: 100%;
     padding: 14px;
     text-align: center;

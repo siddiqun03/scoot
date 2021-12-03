@@ -1,0 +1,113 @@
+.hero {
+  padding: 153px 0 153px;
+  background-image: url("../../images/desktop-hero-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 500px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #ffffff;
+  }
+  &__box {
+    position: relative;
+    margin: 0;
+    margin-left: 32px;
+    padding: 0;
+    padding-left: 57px;
+    &::before {
+      content: url("../../images/desctop-hero-before.svg");
+      position: absolute;
+      left: -205px;
+      top: 40px;
+    }
+    &::after {
+      content: url("../../images/desctop-hero-after.svg");
+      position: absolute;
+      left: 440px;
+      top: 40px;
+      margin-left: 60px;
+    }
+  }
+  &__desc {
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 405px;
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding-top: 137px;
+    padding-bottom: 217px;
+    background-image: url("../../images/tablet-bg-img.jpg");
+    text-align: center;
+    &__left {
+      align-items: center;
+      width: 100%;
+      max-width: 573px;
+    }
+    &__heading {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    &__desc {
+      max-width: 573px;
+      margin: 0 auto 40px;
+    }
+    &__box {
+      margin: 0 auto;
+      padding: 0;
+      &::before {
+        content: url("");
+      }
+      &::after {
+        left: -190px;
+        top: 200px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 395px) {
+  .hero {
+    &__desc {
+      font-size: 13px;
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hero {
+    padding-top: 115px;
+    padding-bottom: 200px;
+    background-image: url("../../images/mobile-hero-bg-img.jpg");
+    &__heading {
+      margin-bottom: 35px;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: -1.78571px;
+    }
+    &__desc {
+      max-width: 311px;
+      margin-bottom: 54px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__box {
+      &::after {
+        top: 220px;
+        left: -395px;
+      }
+    }
+  }
+}

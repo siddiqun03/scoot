@@ -1,0 +1,117 @@
+.opportunity {
+  padding: 160px 0px 200px 0px;
+  &__list {
+      position: relative;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::before{
+        content: url('../../images/line-opportunity.png');
+        position: absolute;
+        top: 40px;
+        left: -165px;
+    }
+  }
+  &__item {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    margin: 0;
+    margin-bottom: 27px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+  }
+  &__desc {
+    margin: 0;
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    line-height: 25px;
+    color: #939caa;
+  }
+}
+
+.locate::before {
+  content: url("../images/locate-svg.svg");
+  position: relative;
+}
+.pick-scooter::before {
+  content: url("../images/pick-scooter.svg");
+}
+.enjoy::before {
+  content: url("../images/enjoy-svg.svg");
+}
+.locate::before,
+.pick-scooter::before,
+.enjoy::before {
+  margin-bottom: 40px;
+  z-index: 2;
+}
+// fixes bug with responsive
+@media only screen and (max-width: 1090px){
+    .opportunity{
+        &__list{
+            &::before{
+                left: -255px;
+            }
+        }
+        &__header{
+            font-size: 22px;
+        }
+        &__desc{
+            font-size: 15px;
+        }
+    }
+}
+@media only screen and (max-width: 955px){
+    .opportunity{
+        &__list{
+            &::before{
+                left: -350px;
+            }
+        }
+        &__header{
+            font-size: 22px;
+        }
+        &__desc{
+            font-size: 15px;
+        }
+    }
+}
+@media only screen and (max-width: 810px){
+    .opportunity{
+        &__list{
+            &::before{
+                left: -445px;
+            }
+        }
+        &__header{
+            font-size: 22px;
+        }
+        &__desc{
+            font-size: 15px;
+        }
+    }
+}
+// tablet version
+@media only screen  and (max-width: 768px){
+    .opportunity{
+        &__list {
+            flex-direction: column;
+            &::before{
+                content: url('');
+            }
+        }
+        &__item{
+            flex-direction: row;
+        }
+    }
+}
