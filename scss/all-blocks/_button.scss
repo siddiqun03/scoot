@@ -1,0 +1,37 @@
+.button {
+  padding: 11px 37px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: var(--orange);
+  border: 3px solid var(--orange);
+  display: flex;
+  flex-shrink: 0;
+  &:active {
+    background-color: transparent;
+    color: var(--orange);
+  }
+  &--link {
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .button--link {
+    padding: 5px 18px;
+    font-size: 9px;
+    line-height: 15px;
+    color: #fff;
+    border: 2px solid var(--orange);
+  }
+}
+@media only screen and (max-width: 415px) {
+  .header__open .button--link {
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
