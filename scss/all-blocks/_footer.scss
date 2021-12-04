@@ -37,6 +37,12 @@
       text-decoration: none;
       border-radius: 8px;
       background-color: #e5ecf4;
+    &:hover{
+        opacity: 0.6;
+    }
+    &:active{
+        opacity: 0.8;
+    }
     }
     &__img {
       margin-right: 12px;
@@ -88,8 +94,12 @@
   }
   &__right {
     margin-left: auto;
+    &-img path:hover {
+        fill:#ffffff;
+    }
     &-img {
       text-decoration: none;
+
     }
     &-img + &-img {
       margin-left: 24px;
