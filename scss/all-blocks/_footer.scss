@@ -1,0 +1,221 @@
+.footer {
+    .sign-up {
+      background: url("../../images/footer-top-bg-desk.png");
+      background-size: cover;
+      &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 102px;
+        padding-bottom: 102px;
+      }
+      &__heading {
+        padding: 0;
+        margin: 0;
+        max-width: 415px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #ffffff;
+      }
+    }
+    .apps {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: -18px;
+      &__link {
+        max-width: 182px;
+        min-height: 56px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 18px;
+        padding: 16px 8px;
+        text-decoration: none;
+        border-radius: 8px;
+        background-color: #e5ecf4;
+      }
+      &__img {
+        margin-right: 12px;
+      }
+      &__desc1 {
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: #495567;
+      }
+      &__desc2 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: #495567;
+      }
+    }
+  }
+  .footer {
+    &__bottom {
+      background-color: #333a44;
+      &__container {
+        display: flex;
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
+    }
+    &__list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 58px;
+      list-style: none;
+    }
+    &__item + &__item {
+      margin-left: 32px;
+    }
+    &__link {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      color: #939caa;
+    }
+    &__right {
+      margin-left: auto;
+      &-img + &-img {
+        margin-left: 24px;
+      }
+    }
+  }
+
+  @media only screen and(max-width:850px) {
+    .sign-up {
+      &__heading {
+        max-width: 375px;
+        font-size: 40px;
+        line-height: 40px;
+      }
+      .apps {
+        &__link {
+          padding: 12px 5px;
+          flex-shrink: 1;
+        }
+      }
+    }
+  }
+
+  @media only screen and(max-width:768px) {
+    .sign-up {
+      .sign-up__container {
+        flex-direction: column;
+        max-width: 689px;
+        padding-top: 62px;
+        padding-bottom: 62px;
+        background: url("../images/footer-tablet-bg.png");
+        background-size: cover;
+      }
+      .sign-up__heading {
+        max-width: 457px;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .apps {
+        &__link {
+          padding: 16px 8px;
+          flex-shrink: 1;
+        }
+      }
+    }
+  }
+
+  @media only screen and(max-width:620px) {
+    .footer {
+      &__list {
+        margin-left: 38px;
+      }
+      &__item + &__item {
+        margin-left: 22px;
+      }
+      &__right {
+        &-img + &-img {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  @media only screen and(max-width:540px) {
+    .footer {
+      &__list {
+        margin-left: 28px;
+      }
+      &__item + &__item {
+        margin-left: 10px;
+      }
+      &__link {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      &__right {
+        &-img + &-img {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  @media only screen and(max-width:490px) {
+    .footer {
+      &__logo-img {
+        width: 70px;
+        height: 20px;
+      }
+      &__list {
+        margin-left: 15px;
+      }
+      &__item + &__item {
+        margin-left: 8px;
+      }
+      &__link {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      &__right {
+        &-img + &-img {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  @media only screen and(max-width:420px) {
+    .footer {
+      &__bottom {
+        &__container {
+          max-width: 351px;
+          flex-direction: column;
+        }
+      }
+      &__logo-img {
+        margin-bottom: 40px;
+      }
+      &__list {
+        flex-direction: column;
+      }
+      &__item + &__item {
+        margin-left: 0px;
+        margin-top: 16px;
+      }
+      &__right {
+        margin: 0 auto;
+        margin-top: 85px;
+      }
+    }
+  }
