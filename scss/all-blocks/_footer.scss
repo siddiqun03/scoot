@@ -91,6 +91,12 @@
     font-size: 15px;
     line-height: 25px;
     color: #939caa;
+    &:hover{
+      opacity: 0.6;
+    }
+    &:active{
+      opacity: 0.8;
+    }
   }
   &__right {
     margin-left: auto;
