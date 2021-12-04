@@ -5,6 +5,7 @@
       justify-content: center;
     }
     &__list {
+      width: 100%;
       margin: 0;
       padding: 0;
       display: flex;
@@ -49,37 +50,37 @@
     }
   }
 
-  .scoot--item:nth-child(even) {
+  .scoot--item:nth-child(2n) {
     flex-direction: row-reverse;
   }
 
-  .scoot--item:nth-child(even) .circle-img::after {
+  .scoot--item:nth-child(2n) .circle-img::after {
     position: absolute;
     content: url("../images/right-direction.svg");
     z-index: 3;
     left: -165px;
     flex-shrink: 1;
   }
-  .scoot--item:nth-child(even) .circle-img::before {
+  .scoot--item:nth-child(2n) .circle-img::before {
     position: absolute;
     content: url("../images/left__blue.png");
     z-index: 2;
     left: -165px;
     flex-shrink: 1;
   }
-  .scoot--item:nth-child(odd) .circle-img::before {
+  .scoot--item:nth-child(2n-1) .circle-img::before {
     position: absolute;
     content: url("../images/left-direction.svg");
     z-index: 3;
     top: -140px;
-    left: 250px;
+    left: 245px;
     flex-shrink: 1;
   }
-  .scoot--item:nth-child(odd) .circle-img::after {
+  .scoot--item:nth-child(2n-1) .circle-img::after {
     position: absolute;
     content: url("../images/right__blue.png");
     z-index: 2;
-    left: 510px;
+    left: 505px;
     flex-shrink: 1;
   }
   .scoot--item:first-child .circle-img::before {
@@ -87,7 +88,7 @@
     content: url("../images/fist-item\(\).svg");
     z-index: 3;
     top: 95px;
-    left: -130px;
+    left: -135px;
     flex-shrink: 1;
   }
 
@@ -136,31 +137,34 @@
       }
     }
     .scoot--item {
-      &:nth-child(even) {
+      &:nth-child(2n-1) {
         flex-direction: column-reverse;
         align-items: center;
-        &:nth-child(odd) {
-          flex-direction: column-reverse;
-          align-items: center;
-        }
-        &__map {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          max-width: 573px;
-        }
-        &__heading {
-          text-align: center;
-        }
-        &__desc {
-          text-align: center;
-        }
-        .circle-img {
-          margin-bottom: 56px;
-        }
+      }
+
+      &:nth-child(2n) {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      &__map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 573px;
+      }
+      &__heading {
+        text-align: center;
+      }
+      &__desc {
+        text-align: center;
+      }
+      .circle-img {
+        margin-bottom: 56px;
       }
     }
   }
+
   @media only screen and(max-width:650px) {
     .scoot--item {
       &:first-child .circle-img::before {
@@ -169,7 +173,7 @@
       &:first-child .circle-img::before {
         position: absolute;
         display: inline-block;
-        content: url("../images/fist-item\ —\ 2.svg");
+        content: url("../../images/fist-item\ —\ 2.svg");
         top: 50px;
         left: 0px;
       }
