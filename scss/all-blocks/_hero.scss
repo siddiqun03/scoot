@@ -1,6 +1,6 @@
 .hero {
   padding: 153px 0 153px;
-  background-image: url("../../images/desktop-hero-bg-img.jpg");
+  background-image: url("../images/desktop-hero-bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   &__left {
@@ -23,13 +23,13 @@
     padding: 0;
     padding-left: 57px;
     &::before {
-      content: url("../../images/desctop-hero-before.svg");
+      content: url("../images/desctop-hero-before.svg");
       position: absolute;
       left: -205px;
       top: 40px;
     }
     &::after {
-      content: url("../../images/desctop-hero-after.svg");
+      content: url("../images/desctop-hero-after.svg");
       position: absolute;
       left: 440px;
       top: 40px;
@@ -50,7 +50,7 @@
   .hero {
     padding-top: 137px;
     padding-bottom: 217px;
-    background-image: url("../../images/tablet-bg-img.jpg");
+    background-image: url("../images/tablet-bg-img.jpg");
     text-align: center;
     &__left {
       align-items: center;
@@ -89,7 +89,7 @@
   .hero {
     padding-top: 115px;
     padding-bottom: 200px;
-    background-image: url("../../images/mobile-hero-bg-img.jpg");
+    background-image: url("../images/mobile-hero-bg-img.jpg");
     &__heading {
       margin-bottom: 24px;
       font-size: 40px;
@@ -106,7 +106,7 @@
     &__box {
       &::after {
         top: 220px;
-        left: -395px;
+        left: -305px;
       }
     }
   }

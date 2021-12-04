@@ -1,7 +1,7 @@
 .opportunity {
   padding: 160px 0px 200px 0px;
   &__list {
-      position: relative;
+    position: relative;
     width: 100%;
     max-width: 1150px;
     margin: 0;
@@ -9,11 +9,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &::before{
-        content: url('../../images/line-opportunity.png');
-        position: absolute;
-        top: 40px;
-        left: -165px;
+    &::before {
+      content: url("../images/line-opportunity.png");
+      position: absolute;
+      top: 40px;
+      left: -165px;
     }
   }
   &__item {
@@ -56,99 +56,157 @@
   z-index: 2;
 }
 // fixes bug with responsive
-@media only screen and (max-width: 1090px){
-    .opportunity{
-        &__list{
-            &::before{
-                left: -255px;
-            }
-        }
-        &__header{
-            font-size: 22px;
-        }
-        &__desc{
-            font-size: 15px;
-        }
+@media only screen and (max-width: 1090px) {
+  .opportunity {
+    &__list {
+      &::before {
+        left: -255px;
+      }
     }
+    &__header {
+      font-size: 22px;
+    }
+    &__desc {
+      font-size: 15px;
+    }
+  }
 }
-@media only screen and (max-width: 955px){
-    .opportunity{
-        &__list{
-            &::before{
-                left: -350px;
-            }
-        }
-        &__header{
-            font-size: 22px;
-        }
-        &__desc{
-            font-size: 15px;
-        }
+@media only screen and (max-width: 955px) {
+  .opportunity {
+    &__list {
+      &::before {
+        left: -350px;
+      }
     }
+    &__header {
+      font-size: 22px;
+    }
+    &__desc {
+      font-size: 15px;
+    }
+  }
 }
-@media only screen and (max-width: 810px){
-    .opportunity{
-        &__list{
-            &::before{
-                left: -445px;
-            }
-        }
-        &__header{
-            font-size: 22px;
-        }
-        &__desc{
-            font-size: 15px;
-        }
+@media only screen and (max-width: 810px) {
+  .opportunity {
+    &__list {
+      &::before {
+        left: -445px;
+      }
     }
+    &__header {
+      font-size: 22px;
+    }
+    &__desc {
+      font-size: 15px;
+    }
+  }
 }
 // tablet version
-@media only screen  and (max-width: 768px){
-    .opportunity{
-        padding-top: 122px;
-        padding-bottom: 70px;
-        &__list {
-            padding: 0;
-            width: 100%;
-            flex-direction: column;
-            &::before{
-                content: url('../../images/tablet-line-opportunity.png');
-                left: 65px;
-                top: -122px;
-            }
-        }
-        &__item{
-            width: 100%;
-            max-width: 573px;
-            flex-direction: row;
-        }
-        &__item + &__item{
-            margin-top: 40px;
-        }
-        &__desc, &__box{
-            max-width: 573px;
-        }
-        &__box{
-            margin-left: auto;
-        }
-        &__desc{
-            max-width: 398px;
-        }
-
+@media only screen and (max-width: 768px) {
+  .opportunity {
+    padding-top: 122px;
+    padding-bottom: 70px;
+    &__list {
+      padding: 0;
+      width: 100%;
+      flex-direction: column;
+      &::before {
+        content: url("../images/tablet-line-opportunity.png");
+        left: 65px;
+        top: -122px;
+      }
     }
-
+    &__item {
+      width: 100%;
+      max-width: 573px;
+      flex-direction: row;
+    }
+    &__item + &__item {
+      margin-top: 40px;
+    }
+    &__desc,
+    &__box {
+      max-width: 573px;
+    }
+    &__box {
+      margin-left: auto;
+    }
+    &__desc {
+      max-width: 398px;
+    }
+  }
 }
-@media only screen and (max-width: 520px){
-    .opportunity{
-        &__list{
-            &::before{
-                left: 40px;
-            }
-        }
-        &__header{
-            font-size: 19px;
-        }
-        &__desc{
-            font-size: 12px;
-        }
+@media only screen and (max-width: 520px) {
+  .opportunity {
+    &__list {
+      &::before {
+        left: 40px;
+      }
     }
+    &__header {
+      font-size: 19px;
+    }
+    &__desc {
+      font-size: 12px;
+    }
+  }
+}
+@media only screen and(max-width: 425px) {
+  .opportunity {
+    padding-top: 122px;
+    padding-bottom: 70px;
+    &__list {
+      padding: 0;
+      width: 100%;
+      flex-direction: column;
+      &::before {
+        content: url('n');
+      }
+    }
+    &__item {
+      width: 100%;
+      max-width: 311px;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item + &__item {
+      margin-top: 48px;
+    }
+    // &__desc,
+    // &__box {
+    //   max-width: 573px;
+    // }
+    &__box {
+      margin-left: auto;
+    }
+    &__header {
+      margin-bottom: 24px;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: -0.892857px;
+    }
+    &__desc {
+      max-width: 311px;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+    }
+  }
+  .locate::before {
+    content: url("../images/mobile-locate.svg");
+    position: relative;
+  }
+  .pick-scooter::before {
+    content: url("../images/mobile-pick-scoot.svg");
+  }
+  .enjoy::before {
+    content: url("../images/mobile-enjoy.svg");
+  }
+
+  .locate::before,
+.pick-scooter::before,
+.enjoy::before {
+  margin-bottom: 24px;
+}
 }
